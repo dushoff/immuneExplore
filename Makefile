@@ -11,6 +11,19 @@ vim_session:
 
 ######################################################################
 
+Sources += abib.md park.bib
+
+Sources += $(wildcard *.tex)
+
+outline.pdf: outline.tex
+
+######################################################################
+
+Makefile: | drop
+
+######################################################################
+
+
 ### Makestuff
 
 Sources += Makefile
@@ -25,8 +38,10 @@ makestuff/%.stamp:
 	touch $@
 
 -include makestuff/os.mk
+-include makestuff/ldrop.mk
 
 ## -include makestuff/pipeR.mk
+-include makestuff/texi.mk
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
