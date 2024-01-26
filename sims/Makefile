@@ -29,6 +29,7 @@ noboost.incPlot.Rout: incPlot.R noboost.rds units.rda
 sij.incPlot.Rout: incPlot.R sij.rds units.rda
 	$(pipeR)
 
+Ignore += midReport.pan.pdf
 ## midReport.pan.pdf: midReport.md
 
 Sources += sij.md midReport.md
