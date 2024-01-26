@@ -41,7 +41,7 @@ parms = c(D=5*day, L=5000*year, N=2000
 	, D1 = 4*day, D2=5*day
 	, ps12 = 0.5, ps21 = 0.6
 	, pt12 = 0, pt21 = 0
-	, B = 1
+	, B = 0
 ) 
 
 pre <- as.data.frame(ode(func=sijmod

@@ -1,6 +1,6 @@
 library(shellpipes)
 
-day <- 27
+day <- 1
 year <- 365.25*day
 
 saveEnvironment()

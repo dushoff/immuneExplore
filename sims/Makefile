@@ -21,9 +21,17 @@ sir.Rout: sir.R units.rda
 
 ## Two-strain model from Bologna
 sij.Rout: sij.R units.rda
+noboost.Rout: noboost.R units.rda
 
-sij.incPlot.Rout: incPlot.R sij.rds
+noboost.incPlot.Rout: incPlot.R noboost.rds units.rda
 	$(pipeR)
+
+sij.incPlot.Rout: incPlot.R sij.rds units.rda
+	$(pipeR)
+
+## midReport.pan.pdf: midReport.md
+
+Sources += sij.md midReport.md
 
 ######################################################################
 
@@ -45,6 +53,7 @@ makestuff/%.stamp:
 
 -include makestuff/pipeR.mk
 ## -include makestuff/texi.mk
+-include makestuff/pandoc.mk
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
