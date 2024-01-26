@@ -21,6 +21,7 @@ outline.pdf: outline.tex
 
 subdirs += sims
 
+Ignore += $(subdirs)
 
 ######################################################################
 
