@@ -1,0 +1,32 @@
+\documentclass[12pt]{article}
+
+\bibliographystyle{plain}
+
+\begin{document}
+
+\section*{Immune Exploration Final Report}
+
+PHAC Contract 4500461000: \emph{Exploration of Immunity Patterns Using Dynamical
+Model Simulation to Support Respiratory Disease
+Modelling}. Submitted 21 Mar 2024
+
+\subsection*{Immunity debts}
+
+\subsection*{Partial immunity}
+
+\bigskip\noindent Acquired immunity plays a critical role in the dynamics of infectious disease outbreaks \cite{anderson1985vaccination}. Individuals who have been exposed to a focal pathogen, or to a related pathogen, or who have been vaccinated, may be completely, or partially, immune.
+
+Partial immunity is particularly challenging to understand, and to incorporate into models or forecasts. Two salient challenges for modeling are: defining outcomes, and population-level assumptions. The issues are slightly different when partial immunity is due to the focal pathogen (which may or may not be evolving), related pathogens, or inactivated vaccines. Live attenuated vaccines will not be considered in this project.
+
+Measures of partial protection often differ based on the outcome measured. Modelers need to consider how much protection a population has against: infection (specifically, ability to transmit); clinical or reportable illnesss; and severe outcomes. The immune system has evolved primarily to protect \emph{individuals}; it is not surprising therefore that the effectiveness of partial protection generally increases as we move along this list [GodoyPMC6208006]. Assumptions about partial protection also have consequences for pathogen evolution \cite{gandon2003imperfect}.
+
+Modelers attempting to model partial protection also need to consider how much partial immunity may “protect” individuals against “immune boosting” -- that is, developing further immunity.
+
+Observations of partial protection are also subject to assumptions about population heterogeneity. Broadly, if a group of vaccinees (or recovered individuals) is observed to have 70\% protection against some outcome, this could mean that each individual is 70\% protected, or that 70\% of individuals are completely protected (with the rest not protected at all). The truth is almost certainly somewhere in between, but the majority of modeling approaches make one assumption or the other. These assumptions can be quite consequential.
+
+These competing assumptions were outlined by Smith \cite{smith1984assessment} in the context of vaccination, and further developed by Halloran et al \cite{ halloran1991direct,halloran1992interpretation}, who also emphasized the importance for outcomes: “leaky” vaccines (which give each individual partial protection) would be associated with far larger outbreaks than “polarized” vaccines (where individual response is heterogeneous). Gog et al.~\cite{gog2002dynamics,gog2002status} constructed parallel ideas for competing strains, using the framework of “history-based” (keeping track of past exposures, analogous to the leaky framework) and “status-based” (projecting responses to future exposures, analogous to the polarized framework). In addition to short-term forecasting, these assumptions can have important, and sometimes surprisingly sharp, effects on long-term equilibria and responses to intervention measures and other parameter changes \cite{gomes2014missing}.
+
+\bibliography{park}
+
+\end{document}
+
