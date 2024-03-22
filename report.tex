@@ -1,6 +1,8 @@
 \documentclass[12pt]{article}
 
 \bibliographystyle{plain}
+\newcommand{\head}{\subsection*}
+\newcommand{\sub}{\subsubsection*}
 
 \begin{document}
 
@@ -10,9 +12,31 @@ PHAC Contract 4500461000: \emph{Exploration of Immunity Patterns Using Dynamical
 Model Simulation to Support Respiratory Disease
 Modelling}. Submitted 21 Mar 2024
 
-\subsection*{Immunity debts}
+\head{Immunity gaps}
 
-\subsection*{Partial immunity}
+The COVID-19 pandemic caused severe disruptions to normal patterns of both public-health outreach and seasonal circulation of respiratory viruses. This raises the question of what to expect from these viruses, particularly influenza and RSV, in the coming years. There are several possible mechanisms by which the pandemic might have affected the immune landscape on which other viruses operate.
+
+\sub{Generalized infection debt}
+
+COVID lockdowns, particularly prior to omicron, led to lower \emph{overall} levels of infection in most populations. This caused concern about immune systems becoming “weakened”. Some of these concerns were naive, but there are also realistic reasons for concern, including cross-reactive T cells, Th1/Th2 balance, and innate immune mechanisms. Vaccination can stimulate the immune system is ways similar to infection, so lower levels of vaccination (see below) woud enhance this concern.
+
+\sub{Specific infection debt}
+
+This is the idea that we lose specific immune protection when not challenged by certain viruses, particularly flu and RSV. It's obviously true to some extent, and is a promising area for quantitative exploration (how much was circulation suppressed, how does serology look, what would simple models predict from a bounce-back).
+
+\sub{Vaccination debt}
+
+Vaccination programs have been directly affected by COVID disruptions, and indirectly affected by COVID-centered misinformation. To some extent this is continuing. Like ID2, this is obviously a serious concern and subject to quantitative exploration
+
+\sub{Immune damage}
+
+I don't understand the details yet, but it definitely seems plausible [see measles discoveries from a few years ago] that COVID infection (or maybe just moderate-to-severe COVID disease?) damages the immune system or immune memory.
+
+\sub{Non-immune damage}
+
+Similarly to immune damage, not well understood by me, but seems plausible. Lungs can have lingering damage and there could be synergies, e.g. [Pulmonary Dysfunction after Pediatric COVID-19](https://pubs.rsna.org/doi/10.1148/radiol.221250) There may be a role for secondary bacteria in this story [just made that up now]. 
+
+\head{Partial immunity}
 
 \bigskip\noindent Acquired immunity plays a critical role in the dynamics of infectious disease outbreaks \cite{anderson1985vaccination}. Individuals who have been exposed to a focal pathogen, or to a related pathogen, or who have been vaccinated, may be completely, or partially, immune.
 
