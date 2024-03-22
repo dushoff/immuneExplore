@@ -28,12 +28,12 @@ Sources += drop.md
 
 ######################################################################
 
+Ignore += boost.33.pdf
 boost.33.pdf:
 	wget -O $@ https://dushoff.github.io/SIR_model_family/$@
 
 ######################################################################
 
-Sources += $(wildcard *.pl)
 Sources += download.mk
 
 Sources += manual.bib

@@ -1,4 +1,6 @@
-Sources += download.bib
+Sources += $(wildcard *.pl)
+Sources += download.bib download.ris
+
 download.bib: 
 	cat ~/Downloads/*.bib >> $@
 	$(RM) ~/Downloads/*.bib
