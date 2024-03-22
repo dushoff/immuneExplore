@@ -33,6 +33,7 @@ boost.33.pdf:
 
 ######################################################################
 
+Sources += $(wildcard *.pl)
 Sources += download.mk
 
 Sources += manual.bib
