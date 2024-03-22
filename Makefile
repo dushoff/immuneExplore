@@ -4,14 +4,14 @@ current: target
 -include target.mk
 Ignore = target.mk
 
-# -include makestuff/perl.def
+-include makestuff/perl.def
 
 vim_session:
 	bash -cl "vmt"
 
 ######################################################################
 
-Sources += abib.md park.bib
+Sources += abib.md manual.bib
 
 Sources += $(wildcard *.tex)
 
@@ -19,7 +19,7 @@ outline.pdf: outline.tex
 
 ######################################################################
 
-report.pdf: report.tex
+report.pdf: report.tex doc.tex
 
 ######################################################################
 
@@ -27,6 +27,15 @@ Sources += drop.md
 ## drop.filemerge: drop.md
 
 ######################################################################
+
+boost.33.pdf:
+	wget -O $@ https://dushoff.github.io/SIR_model_family/$@
+
+######################################################################
+
+Sources += download.mk
+
+Sources += manual.bib
 
 subdirs += sims
 
@@ -55,3 +64,4 @@ makestuff/%.stamp:
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
+-include makestuff/webpix.mk
