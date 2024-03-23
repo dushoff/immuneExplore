@@ -74,8 +74,7 @@ In earlier collaborations, our group has worked with PHAC to construct framework
 For the current project, we are building on the work done in \cite{arcBoost} to make conceptual models of multi-strain pathogens. \fref{boostDiagram} shows a conceptual model of two competing strains. In our model, we model “leaky” immunity with boosting, but the range of responses covered is actually broader than this, because the effects of immune boosting on incidence patterns are extremely similar to the effects of polarized immunity – in fact, in this particular model, they are identical, small differences arise only when immune waning is modeled explicitly \cite{arcBoost}.
 
 \begin{figure}
-\includegraphics[width=0.6\textwidth]{sims/combined.Rout.pdf}
-
+\includegraphics[width=0.75\textwidth]{sims/newcomb.Rout.pdf}
 \caption{
 	Disease incidence through time in successive strain invasions. A large outbreak with one strain is followed by an outbreak of a related strain. The second outbreak is smaller because of cross-immunity. Questions about polarized and leaky immunity, or boosting, do not affect the initial rise of the second strain. When boosting (dashed line) is implemented, the second outbreak is eventually substantially smaller.
 }
@@ -83,6 +82,16 @@ For the current project, we are building on the work done in \cite{arcBoost} to 
 \end{figure}
 
 The parameter $\epsilon$ gives the strength of cross immunity in this model. The parameter for boosting (or, equivalently, for polarization of cross immunity), does not affect the initial dynamics of a second strain, but can have substantial long-term effects. \fref{invTime} shows an example. A large outbreak driven by the first strain is followed by a smaller example driven by the second strain. Two separate simulations show the same values of all of the basic parameters, and the same value of $\epsilon$, but different values of $q$, leading to the same initial invasion dynamics being followed by distinctly different medium-term invasion dynamics.
+
+\begin{figure}
+\includegraphics[width=0.75\textwidth]{drop/report_pix.Rout.pdf}
+\caption{
+Proportion of the population protected from a single epidemic by various amounts of average cross-immunity in a leaky model, for different assumptions about immune boosting.
+}
+\flab{popProtect}
+\end{figure}
+
+We can look at this phenomenon across ranges of parameters for both cross-protection and \Reff. \fref{popProtect} shows the proportion of cases prevented by pre-existing levels of cross-immunity at the individual level when $\Ro=8$. Low levels of leaky protection at the individual level provide virtually no protection at all at the population level, because individuals ar repeatedly challenged and eventually get infected. With immune boosting in place, however, surviving a single challenge means that you will survive the outbreak. When boosting is complete ($q=1$), the population-level protection is the same as the individual-level protection. This is also what's seen in polarized immunity, where protected individuals are completely protected.
 
 The current model also allows taking account of protection against severe outcomes, by tabulating incidence separately from each of the non-infectious boxes. It also allows for considering the possibility that less severe cases are either less or \emph{more} likely to transmit (presumably due to lower viral loads, or lower symptomatic effects, respectively) \cite{ParisPaper}.
 
