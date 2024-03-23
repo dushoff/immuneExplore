@@ -34,6 +34,9 @@ sij.incPlot.Rout: incPlot.R sij.rds units.rda
 combined.Rout: combined.R noboost.rds sij.rds units.rda
 	$(pipeR)
 
+## Redundant copy because of sync idiocy
+newcomb.Rout: newcomb.R noboost.rds sij.rds units.rda
+	$(pipeR)
 
 ######################################################################
 
