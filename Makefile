@@ -50,6 +50,8 @@ subdirs += sims
 
 alldirs += $(subdirs)
 
+Ignore += $(alldirs)
+
 hotdirs += sims
 
 ######################################################################
