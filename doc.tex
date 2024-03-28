@@ -1,0 +1,100 @@
+
+\rtitle{Immune Exploration Final Report}
+
+PHAC Contract 4500461000: \emph{Exploration of Immunity Patterns Using Dynamical
+Model Simulation to Support Respiratory Disease
+Modelling}. Submitted 22 Mar 2024
+
+\head{Immunity gaps}
+
+The COVID-19 pandemic caused severe disruptions to normal patterns of both public-health outreach and seasonal circulation of respiratory viruses. This raises the question of what to expect from these viruses, particularly influenza and RSV, in the coming years. There are several possible mechanisms by which the pandemic might have affected the immune landscape on which other viruses operate.
+
+\sub{Generalized infection debt}
+
+COVID lockdowns, particularly prior to omicron, led to lower \emph{overall} levels of infection in most populations. This caused concern about immune systems becoming “weakened”. Some of these concerns were naive, but there are also realistic reasons for concern, including cross-reactive T cells, Th1/Th2 balance, and innate immune mechanisms. Vaccination can stimulate the immune system is ways similar to infection, so lower levels of vaccination (see below) would enhance this concern.
+
+\sub{Specific infection debt}
+
+In addition to possible effects of a generalized reduction in viral infections, there will certainly be some effect of the absence of \emph{specific} infections. 
+For example, immunity to influenza virus is complex, but it is known that people are repeatedly infected by related influenza viruses, and good evidence that effective susceptibility to circulating influenza viruses accumulated when influenza circulation was suppressed by non-pharmaceutical interventions against COVID.
+
+\sub{Vaccination debt}
+
+Vaccination programs have been directly affected by COVID disruptions, and indirectly affected by COVID-centered misinformation. Decreased vaccination targeted at acute respiratory viruses will contribute to the specific infection debt, while decreased coverage of childhood and other routine vaccines may contribute to the generalized infection debt.
+
+\sub{Immune damage}
+
+There is some evidence that COVID infection can damage the immune system, or damage or reset immune memory. 
+It is well established that the measles virus can have long-term effects on immune memory and function that increase susceptibility to other diseases. This phenomenon is sometimes known as “immune amnesia”.
+
+\sub{Non-immune damage}
+
+Patients whose lungs are damaged by moderate or severe COVID may be more vulnerable to other viruses. They are particularly likely to be vulnerable to \emph{illness} given infection.
+It is known that lungs damaged by viruses are more vulnerable to bacterial pneumonia and related diseases; this is particularly common following infection with influenza.
+It is plausible that some COVID survivors will be more vulnerable to this sort of syndrome.
+
+\head{Partial immunity}
+
+\bigskip\noindent Acquired immunity plays a critical role in the dynamics of infectious disease outbreaks \cite{anderson1985vaccination}. Individuals who have been exposed to a focal pathogen, or to a related pathogen, or who have been vaccinated, may be completely, or partially, immune.
+
+Partial immunity is particularly challenging to understand, and to incorporate into models or forecasts. Two salient challenges for modeling are: defining outcomes, and population-level assumptions. The issues are slightly different when partial immunity is due to the focal pathogen (which may or may not be evolving), related pathogens, or inactivated vaccines. Live attenuated vaccines will not be considered in this project.
+
+\head{Immunity and outcomes}
+
+Measures of partial protection often differ based on the outcome measured. Modelers need to consider how much protection a population has against: infection (specifically, ability to transmit); clinical or reportable illnesss; and severe outcomes. The immune system has evolved primarily to protect \emph{individuals}; it is not surprising therefore that the effectiveness of partial protection generally increases as we move along this list \cite{GodoyOutcomes}. Assumptions about partial protection also have consequences for pathogen evolution \cite{gandon2003imperfect}.
+
+Modelers attempting to model partial protection also need to consider how much partial immunity may “protect” individuals against “immune boosting” -- that is, developing further immunity. Observations of partial protection are also subject to assumptions about population heterogeneity. Broadly, if a group of vaccinees (or recovered individuals) is observed to have 70\% protection against some outcome, this could mean that each individual is 70\% protected, or that 70\% of individuals are completely protected (with the rest not protected at all). The truth is almost certainly somewhere in between, but the majority of modeling approaches make one assumption or the other. These assumptions can be quite consequential \cite{arcBoost}.
+
+These competing assumptions were outlined by Smith \cite{smith1984assessment} in the context of vaccination, and further developed by Halloran et al \cite{ halloran1991direct,halloran1992interpretation}, who also emphasized the importance for outcomes: “leaky” vaccines (which give each individual partial protection) would be associated with far larger outbreaks than “polarized” vaccines (where individual response is heterogeneous). Gog et al.~\cite{gog2002dynamics,gog2002status} constructed parallel ideas for competing strains, using the framework of “history-based” (keeping track of past exposures, analogous to the leaky framework) and “status-based” (projecting responses to future exposures, analogous to the polarized framework). In addition to short-term forecasting, these assumptions can have important, and sometimes surprisingly sharp, effects on long-term equilibria and responses to intervention measures and other parameter changes \cite{gomes2014missing}.
+
+\head{Modeling frameworks}
+
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{drop/whiteboard.png}
+
+\caption{
+	Example of a result from earlier collaboration about immune status and
+	structure. Keeping track of COVID immune status in a population with natural exposure to different strains, and as well as vaccination history.
+	\emph{Diagram courtesy of Michael WZ Li.}
+}
+\flab{whiteboard}
+\end{figure}
+
+In earlier collaborations, our group has worked with PHAC to construct frameworks for thinking about changing immune status with respect to \scv. These models raise questions about structural assumptions (e.g., polarization, leakiness and boosting) as discussed above. They also raise questions about linking immune status to transmission, morbidity and mortality outcomes. \fref{whiteboard} shows a “whiteboard” diagram for internal discussion that emerged from these discussions.
+
+\begin{figure}
+\includegraphics[width=0.6\textwidth]{boost.33.pdf}
+
+\caption{
+	A compartmental diagram for two competing strains with cross-immunity. Susceptibles can be serially infected with the two strains in either order. Individuals recovered from either strain are partially susceptible to infection by the other strain. Individuals who resist a challenge (don't become infectious) due to cross-immunity, are “boosted” with probability $q$.
+}
+\flab{boostDiagram}
+\end{figure}
+
+For the current project, we are building on the work done in \cite{arcBoost} to make conceptual models of multi-strain pathogens. \fref{boostDiagram} shows a conceptual model of two competing strains. In our model, we model “leaky” immunity with boosting, but the range of responses covered is actually broader than this, because the effects of immune boosting on incidence patterns are extremely similar to the effects of polarized immunity – in fact, in this particular model, they are identical, small differences arise only when immune waning is modeled explicitly \cite{arcBoost}.
+
+\begin{figure}
+\includegraphics[width=0.75\textwidth]{sims/newcomb.Rout.pdf}
+\caption{
+	Disease incidence through time in successive strain invasions. A large outbreak with one strain is followed by an outbreak of a related strain. The second outbreak is smaller because of cross-immunity. Questions about polarized and leaky immunity, or boosting, do not affect the initial rise of the second strain. When boosting (dashed line) is implemented, the second outbreak is eventually substantially smaller.
+}
+\flab{invTime}
+\end{figure}
+
+The parameter $\epsilon$ gives the strength of cross immunity in this model. The parameter for boosting (or, equivalently, for polarization of cross immunity), does not affect the initial dynamics of a second strain, but can have substantial long-term effects. \fref{invTime} shows an example. A large outbreak driven by the first strain is followed by a smaller example driven by the second strain. Two separate simulations show the same values of all of the basic parameters, and the same value of $\epsilon$, but different values of $q$, leading to the same initial invasion dynamics being followed by distinctly different medium-term invasion dynamics.
+
+\begin{figure}
+\includegraphics[width=0.75\textwidth]{drop/report_pix.Rout.pdf}
+\caption{
+Proportion of the population protected from a single epidemic by various amounts of average cross-immunity in a leaky model, for different assumptions about immune boosting.
+}
+\flab{popProtect}
+\end{figure}
+
+We can look at this phenomenon across ranges of parameters for both cross-protection and \Reff. \fref{popProtect} shows the proportion of cases prevented by pre-existing levels of cross-immunity at the individual level when $\Ro=8$. Low levels of leaky protection at the individual level provide virtually no protection at all at the population level, because individuals ar repeatedly challenged and eventually get infected. With immune boosting in place, however, surviving a single challenge means that you will survive the outbreak. When boosting is complete ($q=1$), the population-level protection is the same as the individual-level protection. This is also what's seen in polarized immunity, where protected individuals are completely protected.
+
+The current model also allows taking account of protection against severe outcomes, by tabulating incidence separately from each of the non-infectious boxes. It also allows for considering the possibility that less severe cases are either less or \emph{more} likely to transmit (presumably due to lower viral loads, or lower symptomatic effects, respectively) \cite{ParisPaper}.
+
+\head{Future directions}
+
+Our group hopes to continue to work with PHAC to incorporate these ideas into practical models of influenza, COVID-19, RSV and other acute respiratory pathogens. The priority is effective modeling to protect Canadians, but we will also publish our findings as appropriate.

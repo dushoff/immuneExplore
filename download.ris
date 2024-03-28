@@ -1,0 +1,277 @@
+TY  - JOUR
+AU  - Welsh, Raymond M.
+A# U  - Fujinami, Robert S.
+PY  - 2007
+DA  - 2007/07/01
+TI  - Pathogenic epitopes, heterologous immunity and vaccine design
+JO  - Nature Reviews Microbiology
+SP  - 555
+EP  - 563
+VL  - 5
+IS  - 7
+AB  - Vaccine strategies are focused on developing protective responses to immunogenic peptide epitopes of pathogens that are normally recognized by T and B cells. However, some epitopes stimulate crossreactive T-cell responses between pathogens and can prime a host to damaging pathology on infection with the crossreactive pathogen. The removal of potentially pathogenic epitopes from vaccines might enhance prophylaxis and reduce the risk of side effects of vaccine-associated disease.
+SN  - 1740-1534
+UR  - https://doi.org/10.1038/nrmicro1709
+DO  - 10.1038/nrmicro1709
+ID  - Welsh2007
+ER  - 
+PMID- 30376915
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20191001
+LR  - 20220915
+IS  - 1560-7917 (Electronic)
+IS  - 1025-496X (Print)
+IS  - 1025-496X (Linking)
+VI  - 23
+IP  - 43
+DP  - 2018 Oct
+TI  - Influenza vaccine effectiveness in reducing severe outcomes over six influenza 
+      seasons, a case-case analysis, Spain, 2010/11 to 2015/16.
+LID - 10.2807/1560-7917.ES.2018.23.43.1700732 [doi]
+LID - 1700732
+AB  - INTRODUCTION: When influenza vaccination is ineffective in preventing influenza 
+      virus infection, it may still reduce the severity of influenza-associated 
+      disease. Here, we estimate the effect of influenza vaccination in preventing 
+      severe outcomes e.g. intensive care unit (ICU) admission and death, even though 
+      it did not prevent influenza virus infection and subsequent hospitalisation. 
+      METHODS: An observational case–case epidemiological study was carried out in 12 
+      sentinel hospitals in Catalonia (Spain) over six influenza seasons 
+      2010/11–2015/16. Cases were individuals with severe laboratory-confirmed 
+      influenza virus infection and aged 18 years and older. For each reported case we 
+      collected demographic, virological and clinical characteristics. Logistic 
+      regression was used to estimate the crude, adjusted odd ratios (aOR) and 95% 
+      confidence intervals (CI). RESULTS: Of 1,727 hospitalised patients included in 
+      the study, 799 were female (46.7%), 591 (34.2%) were admitted to the ICU and 223 
+      (12.9%) died. Influenza vaccination uptake was lower in cases that required ICU 
+      admission or died (21.2% vs 29.7%, p < 0.001). The adjusted influenza vaccination 
+      effectiveness in preventing ICU admission or death was 23% (95% CI: 1 to 40). In 
+      an analysis restricted to sex, age group and antiviral treatment, influenza 
+      vaccination had a positive effect on disease severity in all age groups and 
+      categories. CONCLUSIONS: We found that influenza vaccination reduced the severity 
+      of disease even in cases where it did not prevent infection and 
+      influenza-associated hospitalisation. Therefore, increased vaccination uptake may 
+      reduce complications, ICU admission and death.
+FAU - Godoy, Pere
+AU  - Godoy P
+AD  - Agència de Salut Pública de Catalunya, Barcelona, Spain.
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+AD  - IRBLleida. Institut de Recerca Biomèdica de Lleida, Lleida, Spain.
+FAU - Romero, Arantxa
+AU  - Romero A
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+FAU - Soldevila, Núria
+AU  - Soldevila N
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+AD  - Universitat de Barcelona, Barcelona, Spain.
+FAU - Torner, Nuria
+AU  - Torner N
+AD  - Agència de Salut Pública de Catalunya, Barcelona, Spain.
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+AD  - Universitat de Barcelona, Barcelona, Spain.
+FAU - Jané, Mireia
+AU  - Jané M
+AD  - Agència de Salut Pública de Catalunya, Barcelona, Spain.
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+FAU - Martínez, Ana
+AU  - Martínez A
+AD  - Agència de Salut Pública de Catalunya, Barcelona, Spain.
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+FAU - Caylà, Joan A
+AU  - Caylà JA
+AD  - TB Research Unit Foundation (fuiTB), Barcelona, Spain.
+FAU - Rius, Cristina
+AU  - Rius C
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+AD  - Agència de Salut Pública de Barcelona, Barcelona, Spain.
+FAU - Domínguez, Angela
+AU  - Domínguez A
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+AD  - Universitat de Barcelona, Barcelona, Spain.
+CN  - Working Group on Surveillance of Severe Influenza Hospitalized Cases in Catalonia
+AD  - The Working Group on Surveillance of Severe Influenza Hospitalized Cases in 
+      Catalonia have been listed at the end of this article.
+LA  - eng
+PT  - Journal Article
+PT  - Observational Study
+PT  - Research Support, Non-U.S. Gov't
+PL  - Sweden
+TA  - Euro Surveill
+JT  - Euro surveillance : bulletin Europeen sur les maladies transmissibles = European 
+      communicable disease bulletin
+JID - 100887452
+RN  - 0 (Influenza Vaccines)
+SB  - IM
+MH  - Adolescent
+MH  - Adult
+MH  - Aged
+MH  - Aged, 80 and over
+MH  - Case-Control Studies
+MH  - Female
+MH  - Hospital Mortality
+MH  - Hospitalization/*statistics & numerical data
+MH  - Humans
+MH  - Influenza A Virus, H1N1 Subtype/*immunology/isolation & purification
+MH  - Influenza A Virus, H3N2 Subtype/*immunology/isolation & purification
+MH  - Influenza Vaccines/*administration & dosage/immunology
+MH  - Influenza, Human/epidemiology/*prevention & control/virology
+MH  - Male
+MH  - Middle Aged
+MH  - Outcome Assessment, Health Care
+MH  - *Population Surveillance
+MH  - Seasons
+MH  - Spain/epidemiology
+MH  - Vaccination/statistics & numerical data
+MH  - *Vaccine Potency
+MH  - Young Adult
+PMC - PMC6208006
+OTO - NOTNLM
+OT  - Spain
+OT  - disease severity
+OT  - hospitalised patients
+OT  - influenza
+OT  - vaccine effectiveness
+COIS- Conflict of interest: None declared.
+EDAT- 2018/11/01 06:00
+MHDA- 2019/10/02 06:00
+PMCR- 2018/10/25
+CRDT- 2018/11/01 06:00
+PHST- 2018/11/01 06:00 [entrez]
+PHST- 2018/11/01 06:00 [pubmed]
+PHST- 2019/10/02 06:00 [medline]
+PHST- 2018/10/25 00:00 [pmc-release]
+AID - 1700732 [pii]
+AID - 10.2807/1560-7917.ES.2018.23.43.1700732 [doi]
+PST - ppublish
+SO  - Euro Surveill. 2018 Oct;23(43):1700732. doi: 
+      10.2807/1560-7917.ES.2018.23.43.1700732.
+PMID- 30376915
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20191001
+LR  - 20220915
+IS  - 1560-7917 (Electronic)
+IS  - 1025-496X (Print)
+IS  - 1025-496X (Linking)
+VI  - 23
+IP  - 43
+DP  - 2018 Oct
+TI  - Influenza vaccine effectiveness in reducing severe outcomes over six influenza 
+      seasons, a case-case analysis, Spain, 2010/11 to 2015/16.
+LID - 10.2807/1560-7917.ES.2018.23.43.1700732 [doi]
+LID - 1700732
+AB  - INTRODUCTION: When influenza vaccination is ineffective in preventing influenza 
+      virus infection, it may still reduce the severity of influenza-associated 
+      disease. Here, we estimate the effect of influenza vaccination in preventing 
+      severe outcomes e.g. intensive care unit (ICU) admission and death, even though 
+      it did not prevent influenza virus infection and subsequent hospitalisation. 
+      METHODS: An observational case–case epidemiological study was carried out in 12 
+      sentinel hospitals in Catalonia (Spain) over six influenza seasons 
+      2010/11–2015/16. Cases were individuals with severe laboratory-confirmed 
+      influenza virus infection and aged 18 years and older. For each reported case we 
+      collected demographic, virological and clinical characteristics. Logistic 
+      regression was used to estimate the crude, adjusted odd ratios (aOR) and 95% 
+      confidence intervals (CI). RESULTS: Of 1,727 hospitalised patients included in 
+      the study, 799 were female (46.7%), 591 (34.2%) were admitted to the ICU and 223 
+      (12.9%) died. Influenza vaccination uptake was lower in cases that required ICU 
+      admission or died (21.2% vs 29.7%, p < 0.001). The adjusted influenza vaccination 
+      effectiveness in preventing ICU admission or death was 23% (95% CI: 1 to 40). In 
+      an analysis restricted to sex, age group and antiviral treatment, influenza 
+      vaccination had a positive effect on disease severity in all age groups and 
+      categories. CONCLUSIONS: We found that influenza vaccination reduced the severity 
+      of disease even in cases where it did not prevent infection and 
+      influenza-associated hospitalisation. Therefore, increased vaccination uptake may 
+      reduce complications, ICU admission and death.
+FAU - Godoy, Pere
+AU  - Godoy P
+AD  - Agència de Salut Pública de Catalunya, Barcelona, Spain.
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+AD  - IRBLleida. Institut de Recerca Biomèdica de Lleida, Lleida, Spain.
+FAU - Romero, Arantxa
+AU  - Romero A
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+FAU - Soldevila, Núria
+AU  - Soldevila N
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+AD  - Universitat de Barcelona, Barcelona, Spain.
+FAU - Torner, Nuria
+AU  - Torner N
+AD  - Agència de Salut Pública de Catalunya, Barcelona, Spain.
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+AD  - Universitat de Barcelona, Barcelona, Spain.
+FAU - Jané, Mireia
+AU  - Jané M
+AD  - Agència de Salut Pública de Catalunya, Barcelona, Spain.
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+FAU - Martínez, Ana
+AU  - Martínez A
+AD  - Agència de Salut Pública de Catalunya, Barcelona, Spain.
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+FAU - Caylà, Joan A
+AU  - Caylà JA
+AD  - TB Research Unit Foundation (fuiTB), Barcelona, Spain.
+FAU - Rius, Cristina
+AU  - Rius C
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+AD  - Agència de Salut Pública de Barcelona, Barcelona, Spain.
+FAU - Domínguez, Angela
+AU  - Domínguez A
+AD  - CIBER Epidemiología y Salud Pública, Barcelona, Spain.
+AD  - Universitat de Barcelona, Barcelona, Spain.
+CN  - Working Group on Surveillance of Severe Influenza Hospitalized Cases in Catalonia
+AD  - The Working Group on Surveillance of Severe Influenza Hospitalized Cases in 
+      Catalonia have been listed at the end of this article.
+LA  - eng
+PT  - Journal Article
+PT  - Observational Study
+PT  - Research Support, Non-U.S. Gov't
+PL  - Sweden
+TA  - Euro Surveill
+JT  - Euro surveillance : bulletin Europeen sur les maladies transmissibles = European 
+      communicable disease bulletin
+JID - 100887452
+RN  - 0 (Influenza Vaccines)
+SB  - IM
+MH  - Adolescent
+MH  - Adult
+MH  - Aged
+MH  - Aged, 80 and over
+MH  - Case-Control Studies
+MH  - Female
+MH  - Hospital Mortality
+MH  - Hospitalization/*statistics & numerical data
+MH  - Humans
+MH  - Influenza A Virus, H1N1 Subtype/*immunology/isolation & purification
+MH  - Influenza A Virus, H3N2 Subtype/*immunology/isolation & purification
+MH  - Influenza Vaccines/*administration & dosage/immunology
+MH  - Influenza, Human/epidemiology/*prevention & control/virology
+MH  - Male
+MH  - Middle Aged
+MH  - Outcome Assessment, Health Care
+MH  - *Population Surveillance
+MH  - Seasons
+MH  - Spain/epidemiology
+MH  - Vaccination/statistics & numerical data
+MH  - *Vaccine Potency
+MH  - Young Adult
+PMC - PMC6208006
+OTO - NOTNLM
+OT  - Spain
+OT  - disease severity
+OT  - hospitalised patients
+OT  - influenza
+OT  - vaccine effectiveness
+COIS- Conflict of interest: None declared.
+EDAT- 2018/11/01 06:00
+MHDA- 2019/10/02 06:00
+PMCR- 2018/10/25
+CRDT- 2018/11/01 06:00
+PHST- 2018/11/01 06:00 [entrez]
+PHST- 2018/11/01 06:00 [pubmed]
+PHST- 2019/10/02 06:00 [medline]
+PHST- 2018/10/25 00:00 [pmc-release]
+AID - 1700732 [pii]
+AID - 10.2807/1560-7917.ES.2018.23.43.1700732 [doi]
+PST - ppublish
+SO  - Euro Surveill. 2018 Oct;23(43):1700732. doi: 
+      10.2807/1560-7917.ES.2018.23.43.1700732.
