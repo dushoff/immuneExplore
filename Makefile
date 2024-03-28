@@ -11,7 +11,7 @@ vim_session:
 
 ######################################################################
 
-Sources += abib.md park.bib
+Sources += abib.md park.bib LICENSE
 
 Sources += $(wildcard *.tex)
 
